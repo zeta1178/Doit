@@ -9,7 +9,7 @@
         <!--Do it-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="Doit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="TasksViewController" customModule="Doit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -66,18 +66,17 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vGz-7M-1nh">
+                                <rect key="frame" x="60" y="155" width="480" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Important:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JjN-Xe-slr">
                                 <rect key="frame" x="260" y="215" width="80" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LZE-LF-KFm">
-                                <rect key="frame" x="276" y="266" width="51" height="31"/>
-                                <connections>
-                                    <action selector="importantSwitch:" destination="Atw-zv-0DJ" eventType="valueChanged" id="56O-08-Ao1"/>
-                                </connections>
-                            </switch>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXG-tS-Xpf">
                                 <rect key="frame" x="285" y="327" width="30" height="30"/>
                                 <state key="normal" title="Add"/>
@@ -85,22 +84,20 @@
                                     <action selector="addTapped:" destination="Atw-zv-0DJ" eventType="touchUpInside" id="qHd-Nb-SvO"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vGz-7M-1nh">
-                                <rect key="frame" x="60" y="155" width="480" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zrD-MT-koc">
+                                <rect key="frame" x="275" y="266" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="hXG-tS-Xpf" firstAttribute="top" secondItem="zrD-MT-koc" secondAttribute="bottom" constant="30" id="42I-KG-NvA"/>
                             <constraint firstItem="9MX-Gn-cTi" firstAttribute="top" secondItem="XVA-dv-bc8" secondAttribute="bottom" constant="40" id="6t2-Qo-cgh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="vGz-7M-1nh" secondAttribute="trailing" constant="40" id="7dd-V1-S2M"/>
+                            <constraint firstItem="zrD-MT-koc" firstAttribute="centerX" secondItem="2aL-5R-cB3" secondAttribute="centerX" id="91d-Bj-6sC"/>
                             <constraint firstItem="9MX-Gn-cTi" firstAttribute="centerX" secondItem="2aL-5R-cB3" secondAttribute="centerX" id="AeF-te-2r3"/>
                             <constraint firstItem="vGz-7M-1nh" firstAttribute="centerX" secondItem="2aL-5R-cB3" secondAttribute="centerX" id="Hnh-KJ-z07"/>
-                            <constraint firstItem="LZE-LF-KFm" firstAttribute="centerX" secondItem="2aL-5R-cB3" secondAttribute="centerX" id="Ir2-OB-P5N"/>
                             <constraint firstItem="hXG-tS-Xpf" firstAttribute="centerX" secondItem="2aL-5R-cB3" secondAttribute="centerX" id="LcY-bE-RhE"/>
-                            <constraint firstItem="hXG-tS-Xpf" firstAttribute="top" secondItem="LZE-LF-KFm" secondAttribute="bottom" constant="30" id="fgp-Ic-PDM"/>
-                            <constraint firstItem="LZE-LF-KFm" firstAttribute="top" secondItem="JjN-Xe-slr" secondAttribute="bottom" constant="30" id="l4N-3U-8fb"/>
+                            <constraint firstItem="zrD-MT-koc" firstAttribute="top" secondItem="JjN-Xe-slr" secondAttribute="bottom" constant="30" id="pCu-Ss-L7d"/>
                             <constraint firstItem="JjN-Xe-slr" firstAttribute="centerX" secondItem="2aL-5R-cB3" secondAttribute="centerX" id="rDI-xx-b9v"/>
                             <constraint firstItem="JjN-Xe-slr" firstAttribute="top" secondItem="vGz-7M-1nh" secondAttribute="bottom" constant="30" id="wPs-iM-u9B"/>
                             <constraint firstItem="vGz-7M-1nh" firstAttribute="leading" secondItem="2aL-5R-cB3" secondAttribute="leadingMargin" constant="40" id="y9E-0T-l2L"/>
@@ -108,7 +105,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="importantSwitch" destination="LZE-LF-KFm" id="qk3-yd-CcX"/>
+                        <outlet property="importantSwitch" destination="zrD-MT-koc" id="Utm-Hk-L69"/>
                         <outlet property="taskNameTextField" destination="vGz-7M-1nh" id="DPA-8d-1hq"/>
                     </connections>
                 </viewController>
