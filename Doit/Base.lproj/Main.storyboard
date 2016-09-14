@@ -48,10 +48,10 @@
             </objects>
             <point key="canvasLocation" x="1071" y="627"/>
         </scene>
-        <!--Creat Task View Controller-->
+        <!--Create Task View Controller-->
         <scene sceneID="qqD-f9-Jet">
             <objects>
-                <viewController id="Atw-zv-0DJ" customClass="CreatTaskViewController" customModule="Doit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Atw-zv-0DJ" customClass="CreateTaskViewController" customModule="Doit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XVA-dv-bc8"/>
                         <viewControllerLayoutGuide type="bottom" id="qLN-qH-daJ"/>
