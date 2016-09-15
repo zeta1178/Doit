@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB336A031D8A4FB100094E90 /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB336A021D8A4FB100094E90 /* Tasks.swift */; };
 		ABCFDA871D89C27100DA3C1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCFDA861D89C27100DA3C1D /* AppDelegate.swift */; };
 		ABCFDA891D89C27100DA3C1D /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCFDA881D89C27100DA3C1D /* TasksViewController.swift */; };
 		ABCFDA8C1D89C27100DA3C1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABCFDA8A1D89C27100DA3C1D /* Main.storyboard */; };
@@ -19,7 +18,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AB336A021D8A4FB100094E90 /* Tasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
 		ABCFDA831D89C27100DA3C1D /* Doit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Doit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABCFDA861D89C27100DA3C1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABCFDA881D89C27100DA3C1D /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
@@ -66,7 +64,6 @@
 				ABCFDA881D89C27100DA3C1D /* TasksViewController.swift */,
 				ABCFDAA11D89DB5A00DA3C1D /* CreateTaskViewController.swift */,
 				ABCFDAA31D8A3E0C00DA3C1D /* CompleteTaskViewController.swift */,
-				AB336A021D8A4FB100094E90 /* Tasks.swift */,
 				ABCFDA8A1D89C27100DA3C1D /* Main.storyboard */,
 				ABCFDA901D89C27200DA3C1D /* Assets.xcassets */,
 				ABCFDA921D89C27200DA3C1D /* LaunchScreen.storyboard */,
@@ -152,7 +149,6 @@
 				ABCFDAA41D8A3E0C00DA3C1D /* CompleteTaskViewController.swift in Sources */,
 				ABCFDA871D89C27100DA3C1D /* AppDelegate.swift in Sources */,
 				ABCFDA8F1D89C27200DA3C1D /* Doit.xcdatamodeld in Sources */,
-				AB336A031D8A4FB100094E90 /* Tasks.swift in Sources */,
 				ABCFDAA21D89DB5A00DA3C1D /* CreateTaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,7 +214,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -260,7 +256,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
