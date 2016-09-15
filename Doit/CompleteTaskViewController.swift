@@ -28,11 +28,11 @@ class CompleteTaskViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func completeTapped(sender: AnyObject) {
+    @IBAction func completeTapped(_ sender: AnyObject) {
         //previousVC.tasks.remove(at: previousVC.selectedIndex)
-        previousVC.tasks.removeAtIndex(previousVC.selectedIndex)
+        previousVC.tasks.remove(at: previousVC.selectedIndex)
         previousVC.tableView.reloadData()
-        navigationController!.popViewControllerAnimated(true)
+        navigationController!.popViewController(animated: true)
     }
     
     

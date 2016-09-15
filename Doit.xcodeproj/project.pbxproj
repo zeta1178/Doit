@@ -13,7 +13,6 @@
 		ABCFDA8F1D89C27200DA3C1D /* Doit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ABCFDA8D1D89C27200DA3C1D /* Doit.xcdatamodeld */; };
 		ABCFDA911D89C27200DA3C1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABCFDA901D89C27200DA3C1D /* Assets.xcassets */; };
 		ABCFDA941D89C27200DA3C1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABCFDA921D89C27200DA3C1D /* LaunchScreen.storyboard */; };
-		ABCFDA9C1D89C8F700DA3C1D /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCFDA9B1D89C8F700DA3C1D /* Task.swift */; };
 		ABCFDAA21D89DB5A00DA3C1D /* CreateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCFDAA11D89DB5A00DA3C1D /* CreateTaskViewController.swift */; };
 		ABCFDAA41D8A3E0C00DA3C1D /* CompleteTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCFDAA31D8A3E0C00DA3C1D /* CompleteTaskViewController.swift */; };
 /* End PBXBuildFile section */
@@ -27,7 +26,6 @@
 		ABCFDA901D89C27200DA3C1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABCFDA931D89C27200DA3C1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABCFDA951D89C27200DA3C1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ABCFDA9B1D89C8F700DA3C1D /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		ABCFDAA11D89DB5A00DA3C1D /* CreateTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTaskViewController.swift; sourceTree = "<group>"; };
 		ABCFDAA31D8A3E0C00DA3C1D /* CompleteTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleteTaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,7 +64,6 @@
 				ABCFDA881D89C27100DA3C1D /* TasksViewController.swift */,
 				ABCFDAA11D89DB5A00DA3C1D /* CreateTaskViewController.swift */,
 				ABCFDAA31D8A3E0C00DA3C1D /* CompleteTaskViewController.swift */,
-				ABCFDA9B1D89C8F700DA3C1D /* Task.swift */,
 				ABCFDA8A1D89C27100DA3C1D /* Main.storyboard */,
 				ABCFDA901D89C27200DA3C1D /* Assets.xcassets */,
 				ABCFDA921D89C27200DA3C1D /* LaunchScreen.storyboard */,
@@ -103,11 +100,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "MIchael Cruz";
 				TargetAttributes = {
 					ABCFDA821D89C27100DA3C1D = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -147,7 +145,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABCFDA9C1D89C8F700DA3C1D /* Task.swift in Sources */,
 				ABCFDA891D89C27100DA3C1D /* TasksViewController.swift in Sources */,
 				ABCFDAA41D8A3E0C00DA3C1D /* CompleteTaskViewController.swift in Sources */,
 				ABCFDA871D89C27100DA3C1D /* AppDelegate.swift in Sources */,
@@ -192,8 +189,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -238,8 +237,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -258,6 +259,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -271,6 +273,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.Cruzy.Doit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -282,6 +285,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.Cruzy.Doit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -304,6 +308,7 @@
 				ABCFDA9A1D89C27200DA3C1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
